@@ -6,6 +6,7 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
 /* ***** NAVBAR STYLES ***** */
@@ -103,7 +104,7 @@ html {
 
 /* ***** HERO ***** */
 .hero{
-    background: linear-gradient( rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.363) ), url('/images/background.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.363) ), url('images/background.jpg');
     height: 100vh;
     width: 100%;
     background-position: bottom;
@@ -264,7 +265,7 @@ hr.style-two {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.548) ), url('/images/equipment.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.548) ), url('images/equipment.jpg');
     background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
@@ -272,7 +273,7 @@ hr.style-two {
 .marco img{
     border: 2px solid black;
     border-radius: 350px;
-    height: 400px;
+    width: 350px;
 }
 .marco-bio{
     display: flex;
@@ -377,6 +378,11 @@ input#contact-message{
 @media screen and (max-width: 860px){
     .contact-us-table{
         width: 90%;
+    }
+}
+@media screen and (max-width: 460px){
+    .marco img{
+        width: 250px;
     }
 }
 
