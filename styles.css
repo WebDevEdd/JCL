@@ -15,7 +15,7 @@ html {
     max-height: 124px;
     width: 100%;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.349);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
@@ -70,7 +70,7 @@ html {
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 80vh;
         top: 124px;
         background-color: #003B73;
         display: flex;
@@ -113,6 +113,8 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    top: 8vh;
+    position: relative;
 }
 .hero-name{
     color: white;
@@ -189,6 +191,7 @@ hr.style-two {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
 }
 .tables{
     height: fit-content;
@@ -267,7 +270,7 @@ hr.style-two {
     height: 100vh;
     background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.548) ), url('images/equipment.jpg');
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
 }
 .marco img{
