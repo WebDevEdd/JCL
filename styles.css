@@ -306,7 +306,7 @@ html {
 
 /* ***** CONTACT ***** */
 .contact-us{
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     background: rgb(0,116,183);
 background: linear-gradient(180deg, rgba(0,116,183,1) 0%, rgba(0,59,115,1) 100%);
