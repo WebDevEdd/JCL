@@ -151,6 +151,10 @@ html {
     color: white;
     padding: 5px 20px;
 }
+.hero-btn a{
+    color: white;
+    text-decoration: none;
+}
 
 
 
