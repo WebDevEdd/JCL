@@ -312,6 +312,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .contact-us-table{
@@ -365,6 +366,36 @@ input#contact-message{
 @media screen and (max-width: 460px){
     .marco img{
         width: 250px;
+    }
+}
+#status{
+    width: 50%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#status.success{
+    background-color: #21c4299f;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: #e94560c2;
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
     }
 }
 

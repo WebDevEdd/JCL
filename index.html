@@ -104,17 +104,19 @@
 
     <!-- ***** CONTACT ***** -->
     <div class="contact-us">
-        <div class="contact-us-table">
+        <form class="contact-us-table" action="https://formspree.io/f/xaylpylg" method="POST" id="my-form">
             <div class="contact-title">Contact Form</div>
             <div class="contact-quote">Contact us to schedule an appointment</div>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Phone Number">
-            <input type="text" placeholder="Email Address">
-            <input type="text" placeholder="City">
-            <input type="text" id="contact-message" placeholder="Message....">
-            <button class="contact-us-btn">Submit</button>
-        </div>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="text" name="number" placeholder="Phone Number">
+            <input type="text" name="mail" placeholder="Email Address">
+            <input type="text" name="subject" placeholder="Subject">
+            <input type="text" name="message" id="contact-message" placeholder="Message....">
+            <button type="submit" name="submit" class="contact-us-btn">Submit</button>
+        </form>
+        <div id="status"></div>
     </div>
+
 
 
     <!-- ***** FOOTER ***** -->
